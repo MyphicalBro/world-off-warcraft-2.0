@@ -214,8 +214,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #151515;
     padding: 30px 0;
     gap: 30px;
-    position: absolute;
-    bottom: 0;
 
     .top {
         display: flex;
