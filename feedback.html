@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="sources/css/feedback.css">
+    <link rel="stylesheet" href="sources/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>World Off Warcraft</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-head">
+            <div class="logo">
+                <img src="sources/assets/logo.png" alt="World Off Warcraft">
+                <h3>World<br>Off<br>Warcraft</h3>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Races</a></li>
+                    <li><a href="#">Spesials</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="feedback.html" class="active">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Поиск...">
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <form action="/feedback" method="post" enctype="application/x-www-form-urlencoded">
+                <h2>Send Feedback</h2>
+
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Your name</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" name="contacts" id="contacts" required>
+                    <label for="contacts">Your contacts</label>
+                </div>
+
+                <div class="textarea">
+                    <textarea name="feedback" id="feedback" required></textarea>
+                    <label for="feedback">Your message</label>
+                </div>
+
+                <button type="submit">Send feedback</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="top">
+            <img src="sources/assets/logo.png" alt="">
+            <h6>World Off Warcraft &copy; 2025</h6>
+        </div>
+        <div class="socials">
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-wikipedia-w"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-google-plus"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="sources/js/script.js"></script>
+</body>
+
+</html>
